@@ -90,10 +90,10 @@ To create an account, send a json with the following fields:
 - email
 - password
 
-After that you will get a token which you will need to send on each API request.
+After that, you will get a token which you will need to send on each API request.
 
 
-To login, send a json with the following fields:
+To log in, send a json with the following fields:
 - email
 - password
 
