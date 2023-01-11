@@ -23,3 +23,53 @@ Second step, create an .env file with the following info:
 - API_URL = '/api/v1'
 - CONNECTION_DB = 'yourDBConnectionHere'
 - JWT_SECRET = 'yourSecretHere'
+
+Finally, use Postman (or another one) to use it.
+
+## API Reference for files managment
+
+#### Get all files
+
+```http
+  GET /api/v1/
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get a file
+
+```http
+  GET /showFiles/:id?
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Upload a file
+
+```http
+  POST /uploadFile/:dir?
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### Create a directory
+
+```http
+  POST /createDirectory/:dir?
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
+
