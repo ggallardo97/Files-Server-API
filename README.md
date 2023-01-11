@@ -19,3 +19,7 @@ First of all, you need to have installed Nodejs and MongoDB, then clone this rep
   cd Files-Server-API
   node index.js
 ```
+Second step, create an .env file with the following info:
+- API_URL = '/api/v1'
+- CONNECTION_DB = 'yourDBConnectionHere'
+- JWT_SECRET = 'yourSecretHere'
