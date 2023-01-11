@@ -82,3 +82,25 @@ Finally, use Postman (or another one) to use it.
 ```http
   POST /logout
 ```
+
+## Usage
+
+To create an account, send a json with the following fields:
+- name
+- email
+- password
+After that you will get a token which you will need to send on each API request.
+
+
+To login, send a json with the following fields:
+- email
+- password
+
+While you are logged in, you will be able to create a large number of directories to upload your files and have them in perfect order.
+
+List of allowed file types:
+- png
+- jpg
+- jpeg
+- gif
+- pdf
