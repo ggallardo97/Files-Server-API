@@ -9,9 +9,7 @@ An API that allows you to interact with a files server (it's like FTP, but you c
 - JWT
 - npm modules
 
-
-
-## Instalación
+## Installation
 
 First of all, you need to have installed Nodejs and MongoDB, then clone this repo and install the required npm modules. Here are some commands that will help you:
 ```bash
@@ -25,18 +23,14 @@ Second step, create an .env file with the following info:
 - JWT_SECRET = 'yourSecretHere'
 
 Finally, use Postman (or another one) to use it.
-
 ## API Reference for files managment
 
-#### Get all files
+#### Remember! For each end point you need to send the json web token.
 
+#### Get all files
 ```http
   GET /api/v1/
 ```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
 
 #### Get a file
 
@@ -46,7 +40,7 @@ Finally, use Postman (or another one) to use it.
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `file_id` | `int` | Get files or a specific one|
 
 #### Upload a file
 
@@ -56,7 +50,7 @@ Finally, use Postman (or another one) to use it.
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `dir`      | `string` | Upload files to the current directory or a specific one |
 
 #### Create a directory
 
@@ -66,10 +60,25 @@ Finally, use Postman (or another one) to use it.
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `dir`      | `string` | Create a directory at the current directory or a specific one |
 
 
-#### add(num1, num2)
+## API Reference for users managment
 
-Takes two numbers and returns the sum.
+#### Create an account
 
+```http
+  POST /register
+```
+
+#### Login to the server
+
+```http
+  POST /login
+```
+
+#### Logout from the server
+
+```http
+  POST /logout
+```
