@@ -89,6 +89,7 @@ To create an account, send a json with the following fields:
 - name
 - email
 - password
+
 After that you will get a token which you will need to send on each API request.
 
 
