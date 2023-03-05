@@ -13,7 +13,7 @@ An API that allows you to interact with a files server (it's like FTP, but you c
 
 First of all, you need to have installed Nodejs and MongoDB, then clone this repo and install the required npm modules. Here are some commands that will help you:
 ```bash
-  git clone Files-Server-API
+  git clone https://github.com/ggallardo97/Files-Server-API
   cd Files-Server-API
   node index.js
 ```
