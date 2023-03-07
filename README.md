@@ -15,6 +15,7 @@ First of all, you need to have installed Nodejs and MongoDB, then clone this rep
 ```bash
   git clone https://github.com/ggallardo97/Files-Server-API
   cd Files-Server-API
+  npm install
   node index.js
 ```
 Second step, create an .env file with the following info:
